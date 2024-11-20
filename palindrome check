@@ -1,0 +1,10 @@
+word = input("Enter a word or phrase: ")
+palindrome = False
+while palindrome == False:
+ if word[::-1].lower() == word[::].lower():
+  palindrome = True
+  print(word + " is a palindrome")
+  break
+ else:
+  print(word + " is not a palindrome")
+  break
